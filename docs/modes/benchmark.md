@@ -1,3 +1,8 @@
+---
+comments: true
+description: Benchmark mode compares speed and accuracy of various YOLOv8 export formats like ONNX or OpenVINO. Optimize formats for speed or accuracy.
+---
+
 <img width="1024" src="https://github.com/ultralytics/assets/raw/main/yolov8/banner-integrations.png">
 
 **Benchmark mode** is used to profile the speed and accuracy of various export formats for YOLOv8. The benchmarks
@@ -42,6 +47,7 @@ the benchmarks to their specific needs and compare the performance of different 
 | `model`     | `None`  | path to model file, i.e. yolov8n.pt, yolov8n.yaml                    |
 | `imgsz`     | `640`   | image size as scalar or (h, w) list, i.e. (640, 480)                 |
 | `half`      | `False` | FP16 quantization                                                    |
+| `int8`      | `False` | INT8 quantization                                                    |
 | `device`    | `None`  | device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu |
 | `hard_fail` | `False` | do not continue on error (bool), or val floor threshold (float)      |
 
